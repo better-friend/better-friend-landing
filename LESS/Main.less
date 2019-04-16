@@ -26,18 +26,28 @@
 
             p {
                 font-size: 20px;
+
+                @media @phone {
+                    line-height: 22px;
+                }
+            }
+            h4 {
+                margin : 0;
             }
         }
 
         .cta {
+            display: block;
+            text-align: center;
 
-
-            button {
+                .button {    
+                border: solid 2px;
                 font-size       : 25px;
                 padding         : 10px 40px;
                 border-radius   : 15px;
                 color           : white;
                 background-color: #305f72;
+                text-decoration: none;
 
                 @media @phone {
                     padding-bottom: 10px;
@@ -84,12 +94,18 @@
         .features1 {
             border-right: dotted 2px white;
             padding-right: 60px;
+
+            @media @phone {
+                padding: 0;
+            }
         }
 
         .features2 {
             border-right:  dotted 2px white;
             padding-right: 60px;
-
+            @media @phone {
+                padding :0;
+            }
         }
         img {
             width : 38px;

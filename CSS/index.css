@@ -41,7 +41,7 @@
   color: white;
 }
 .header a:hover {
-  color: blue;
+  color: #f1d1b5;
 }
 .content .main-content {
   display: flex;
@@ -69,19 +69,33 @@
 .content .main-content .topic p {
   font-size: 20px;
 }
-.content .main-content .cta button {
+@media (max-width: 500px) {
+  .content .main-content .topic p {
+    line-height: 22px;
+  }
+}
+.content .main-content .topic h4 {
+  margin: 0;
+}
+.content .main-content .cta {
+  display: block;
+  text-align: center;
+}
+.content .main-content .cta .button {
+  border: solid 2px;
   font-size: 25px;
   padding: 10px 40px;
   border-radius: 15px;
   color: white;
   background-color: #305f72;
+  text-decoration: none;
 }
 @media (max-width: 500px) {
-  .content .main-content .cta button {
+  .content .main-content .cta .button {
     padding-bottom: 10px;
   }
 }
-.content .main-content .cta button:hover {
+.content .main-content .cta .button:hover {
   color: #305f72;
   background-color: white;
 }
@@ -113,9 +127,19 @@
   border-right: dotted 2px white;
   padding-right: 60px;
 }
+@media (max-width: 500px) {
+  .bottom-content .features .features1 {
+    padding: 0;
+  }
+}
 .bottom-content .features .features2 {
   border-right: dotted 2px white;
   padding-right: 60px;
+}
+@media (max-width: 500px) {
+  .bottom-content .features .features2 {
+    padding: 0;
+  }
 }
 .bottom-content .features img {
   width: 38px;
@@ -135,26 +159,18 @@
   width: 100%;
   height: 70px;
   background-color: #305f72;
-  color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-.footer a {
-  font-size: 1.6em;
-  padding: 0.8em;
-  text-decoration: none;
-  text-align: center;
-  color: white;
-}
-.footer a:hover {
-  color: blue;
+.footer img {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
 }
 @media (max-width: 500px) {
-  .footer {
-    width: 104.5%;
-    margin-left: -2%;
-  }
+  width: 104.5%;
+  margin-left: -2%;
 }
 .main {
   background-color: white;
@@ -193,7 +209,7 @@
   padding: 0 20px 25px;
   background-color: white;
   position: relative;
-  height: 480px;
+  height: 420px;
   width: 480px;
   overflow: hidden;
   width: 30%;
@@ -213,6 +229,11 @@
 .teammate h3 {
   font-size: 19px;
 }
+.teammate .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .teammate .expandButton {
   position: absolute;
   bottom: 0;
@@ -224,7 +245,7 @@
   background-color: white;
 }
 .profile-open {
-  height: 50px;
+  height: 400px;
 }
 .carousel {
   height: 230px;

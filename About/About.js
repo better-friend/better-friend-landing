@@ -1,11 +1,11 @@
-class Team {
+class Teammate {
     constructor(element) {
    
       this.element = element;
   
       this.expandButton = element.querySelector('.expandButton');
  
-      this.expandButton.textContent = 'Click to Expand';
+      this.expandButton.textContent = 'Learn More';
  
       this.expandButton.addEventListener('click', () => this.expandProfile());
     }
@@ -13,18 +13,18 @@ class Team {
     expandProfile() {
  
   
-      if (this.expandButton.textContent === 'Click to Expand') {
-        this.expandButton.textContent = 'Click to Close';
+      if (this.expandButton.textContent === 'Learn More') {
+        this.expandButton.textContent = 'Close';
         this.element.classList.toggle('profile-open');
   
         TweenMax.to(".profile-open", .5, {
-          height: 400,
+          height: 600,
         })
-      } else if (this.expandButton.textContent === 'Click to Close') {
-        this.expandButton.textContent = 'Click to Expand';
+      } else if (this.expandButton.textContent === 'Close') {
+        this.expandButton.textContent = 'Learn More';
   
         TweenMax.to(".profile-open", .5, {
-          height: 50,
+          height: 400,
         })
         this.element.classList.toggle('profile-open');
      
@@ -34,4 +34,4 @@ class Team {
   
 
   let mainContent = document.querySelectorAll('.teammate');
-  mainContent.forEach(teammate => new Team(teammate));
+  mainContent.forEach(teammate => new Teammate(teammate));
