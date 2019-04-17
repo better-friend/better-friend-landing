@@ -1,26 +1,19 @@
 .footer {
-  width           : 100%;
-  height          : 70px;
-  background-color: #305f72;
-  color           : white;
-  display         : flex;
-  justify-content : space-between;
+  .flex-justify-center;
+  .width-100;
   align-items     : center;
+  height          : 70px;
+  background-color: @navy;
+  border-top      : @border;
 
-  a {
-    font-size      : 1.6em;
-    padding        : 0.8em;
-    text-decoration: none;
-    text-align     : center;
-    color          : white;
-
-    &:hover {
-      color: blue;
-    }
+  img {
+    height: 30px;
+    width: 30px;
+    margin:10px;
   }
+}
 
-  @media @phone {
-    width      : 104.5%;
-    margin-left: -2%;
-  }
+@media @phone {
+  width      : 104.5%;
+  margin-left: -2%;
 }

@@ -1,15 +1,14 @@
 .content {
 
     .main-content {
-        display       : flex;
-        flex-direction: column;
-        align-items   : center;
-        width         : 100%;
-        padding-left  : 600px;
-        padding-right : 4em;
-        text-align    : center;
-        line-height   : 3em;
-        margin-top    : 60px;
+        .width-100;
+        .text-aline-center;
+        .flex-column;
+        align-items  : center;
+        padding-left : 600px;
+        padding-right: 4em;
+        margin-top   : 60px;
+        line-height  : 3em;
 
         @media @tablet {
             padding-left: 350px;
@@ -17,90 +16,109 @@
         }
 
         @media @phone {
-            padding: 5px 10px;
-            margin : 0;
-
+            margin-top: 20px;
+            padding  : 5px 15px 10px 10px;
+            margin    : 0;
         }
 
         .topic {
 
+            h2 {
+                font-size: 35px;
+
+                @media @phone {
+                    line-height: 1em;
+                    font-size: 33px;
+                }
+            }
+
             p {
-                font-size: 20px;
+                font-size  : 25px;
+                font-family: @sub-font;
+
+                @media @phone {
+                    font-size  : 15px;
+                    line-height: 22px;
+                }
+            }
+
+            h3 {
+                margin: 0;
+
+                @media @phone {
+                    font-size: 15px;
+                }
             }
         }
 
         .cta {
+            .text-aline-center;
+            display: block;
 
-
-            button {
+            .button {
+                border          : solid 2px;
                 font-size       : 25px;
                 padding         : 10px 40px;
                 border-radius   : 15px;
-                color           : white;
-                background-color: #305f72;
+                text-decoration : none;
+                color           : @white;
+                background-color: @navy;
 
                 @media @phone {
                     padding-bottom: 10px;
-
+                    font-size     : 20px;
+                    padding       : 5px 30px;
                 }
 
                 &:hover {
-                    color           : #305f72;
-                    background-color: white;
+                    color           : @navy;
+                    background-color: @white;
                 }
             }
         }
-
     }
 }
 
-
 .bottom-content {
-    background-color: #f0b7a4;
-    border-top      : dotted 2px white;
-
+    background-color: @pink;
+    border-top      : @border;
 
     .sub-title {
-        display        : flex;
-        flex-wrap      : wrap;
-        justify-content: center;
-        padding-bottom : 40px;
-        color          : #305f72;
-        padding-top    : 40px;
+        .flex-justify-center;
+        flex-wrap: wrap;
+        padding  : 10px 0;
+        font-size: 23px;
+        color    : @navy;
     }
 
     .features {
-        display        : flex;
-        justify-content: space-evenly;
-        text-align     : center;
-        padding-bottom : 2.5em;
+        .flex-justify-center;
+        .text-aline-center;
+        flex-wrap  : wrap;
+        align-items: flex-start;
 
-        @media @tablet {
-            display       : flex;
+        .feature {
+            .flex-justify-center;
+            .text-aline-center;
             flex-direction: column;
+            align-items   : center;
+            width         : 390px;
+            padding       : 30px;
+
+            @media @phone {
+                padding: 10px;
+            }
         }
 
-
-        .features1 {
-            border-right: dotted 2px white;
-            padding-right: 60px;
-        }
-
-        .features2 {
-            border-right:  dotted 2px white;
-            padding-right: 60px;
-
-        }
         img {
             width : 38px;
             height: 38px;
-
         }
 
         h1 {
             font-size  : 18px;
-            color      : #305f72;
             padding-top: 1.3em;
+            color      : @navy;
 
             @media @tablet {
                 padding-bottom: 2em;
