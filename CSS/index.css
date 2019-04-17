@@ -1,20 +1,35 @@
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.width-100 {
+  width: 100%;
+}
+.text-aline-center {
+  text-align: center;
+}
 .header {
   width: 100%;
-  height: 70px;
-  background-color: #305f72;
-  color: white;
+  text-align: center;
   display: flex;
   justify-content: space-between;
+  height: 70px;
   padding: 0.5em;
-  text-align: center;
+  background-color: #305f72;
+  color: white;
+  border-bottom: dotted 2px white;
 }
 @media (max-width: 500px) {
   .header {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 150px;
-    width: 100%;
   }
 }
 .header h1 {
@@ -44,15 +59,15 @@
   color: #f1d1b5;
 }
 .content .main-content {
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   padding-left: 600px;
   padding-right: 4em;
-  text-align: center;
-  line-height: 3em;
   margin-top: 60px;
+  line-height: 3em;
 }
 @media (max-width: 800px) {
   .content .main-content {
@@ -62,37 +77,56 @@
 }
 @media (max-width: 500px) {
   .content .main-content {
-    padding: 5px 10px;
+    margin-top: 20px;
+    padding: 5px 15px 10px 10px;
     margin: 0;
   }
 }
+.content .main-content .topic h2 {
+  font-size: 35px;
+}
+@media (max-width: 500px) {
+  .content .main-content .topic h2 {
+    line-height: 1em;
+    font-size: 33px;
+  }
+}
 .content .main-content .topic p {
-  font-size: 20px;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 @media (max-width: 500px) {
   .content .main-content .topic p {
+    font-size: 15px;
     line-height: 22px;
   }
 }
-.content .main-content .topic h4 {
+.content .main-content .topic h3 {
   margin: 0;
 }
+@media (max-width: 500px) {
+  .content .main-content .topic h3 {
+    font-size: 15px;
+  }
+}
 .content .main-content .cta {
-  display: block;
   text-align: center;
+  display: block;
 }
 .content .main-content .cta .button {
   border: solid 2px;
   font-size: 25px;
   padding: 10px 40px;
   border-radius: 15px;
+  text-decoration: none;
   color: white;
   background-color: #305f72;
-  text-decoration: none;
 }
 @media (max-width: 500px) {
   .content .main-content .cta .button {
     padding-bottom: 10px;
+    font-size: 20px;
+    padding: 5px 30px;
   }
 }
 .content .main-content .cta .button:hover {
@@ -105,40 +139,31 @@
 }
 .bottom-content .sub-title {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 40px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  font-size: 23px;
   color: #305f72;
-  padding-top: 40px;
 }
 .bottom-content .features {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
-  padding-bottom: 2.5em;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
-@media (max-width: 800px) {
-  .bottom-content .features {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.bottom-content .features .features1 {
-  border-right: dotted 2px white;
-  padding-right: 60px;
-}
-@media (max-width: 500px) {
-  .bottom-content .features .features1 {
-    padding: 0;
-  }
-}
-.bottom-content .features .features2 {
-  border-right: dotted 2px white;
-  padding-right: 60px;
+.bottom-content .features .feature {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  width: 390px;
+  padding: 30px;
 }
 @media (max-width: 500px) {
-  .bottom-content .features .features2 {
-    padding: 0;
+  .bottom-content .features .feature {
+    padding: 10px;
   }
 }
 .bottom-content .features img {
@@ -147,8 +172,8 @@
 }
 .bottom-content .features h1 {
   font-size: 18px;
-  color: #305f72;
   padding-top: 1.3em;
+  color: #305f72;
 }
 @media (max-width: 800px) {
   .bottom-content .features h1 {
@@ -156,12 +181,13 @@
   }
 }
 .footer {
-  width: 100%;
-  height: 70px;
-  background-color: #305f72;
   display: flex;
   justify-content: center;
+  width: 100%;
   align-items: center;
+  height: 70px;
+  background-color: #305f72;
+  border-top: dotted 2px white;
 }
 .footer img {
   height: 30px;
@@ -176,8 +202,8 @@
   background-color: white;
 }
 .intro {
-  color: #305f72;
   text-align: center;
+  color: #305f72;
   padding-top: 40px;
 }
 .intro h2 {
@@ -185,18 +211,16 @@
   padding-bottom: 20px;
 }
 .main-content {
+  display: flex;
+  justify-content: center;
   margin-top: 95px;
   margin-bottom: 95px;
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  flex-wrap: wrap;
 }
 @media (max-width: 800px) {
   .main-content {
-    margin: 50px 0;
     display: flex;
     flex-direction: column;
+    margin: 50px 0;
   }
 }
 @media (max-width: 500px) {
@@ -205,16 +229,25 @@
   }
 }
 .teammate {
+  text-align: center;
   margin: 20px 25px;
   padding: 0 20px 25px;
   background-color: white;
   position: relative;
-  height: 420px;
+  height: 260px;
   width: 480px;
   overflow: hidden;
   width: 30%;
-  text-align: center;
   color: #305f72;
+}
+.teammate button {
+  border: none;
+}
+.teammate button:focus {
+  outline: 0;
+}
+.teammate button:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 800px) {
   .teammate {
@@ -225,45 +258,78 @@
   font-size: 28px;
   padding: 0;
   margin: 15px 0 0;
+  color: #305f72;
 }
 .teammate h3 {
   font-size: 19px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.teammate .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.teammate img {
+  height: 160px;
+  width: 160px;
 }
-.teammate .expandButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  font-size: 12px;
-  color: grey;
+/* The Modal (background) */
+.teammate-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
-  transform: translate(-50%);
-  background-color: white;
-}
-.profile-open {
-  height: 400px;
 }
 .carousel {
-  height: 230px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 240px;
   background-color: #f1d1b5;
+  border-top: dotted 2px white;
 }
 .carousel p {
-  display: none;
-  color: #305f72;
-  font-size: 25px;
   text-align: center;
+  display: none;
+  font-size: 26px;
   font-style: italic;
+  color: #305f72;
 }
 @media (max-width: 500px) {
   .carousel p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .carousel img {
@@ -283,8 +349,8 @@ body {
   font-family: 'Lora', sans-serif;
 }
 .container {
-  max-width: 1265px;
   width: 100%;
+  max-width: 1265px;
   margin: 0 auto;
 }
 @media (max-width: 800px) {

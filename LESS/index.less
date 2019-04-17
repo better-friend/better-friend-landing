@@ -1,37 +1,37 @@
-
-@import 'variables.less';
+@import 'Variables.less';
+@import 'Mixins.less';
 @import 'Header.less';
 @import 'Main.less';
-@import 'footer.less';
-@import '../About/about.less';
-@import '../Carousel/carousel.less';
+@import 'Footer.less';
+@import '../About/About.less';
+@import '../Carousel/Carousel.less';
 
 
-html, body {
-  margin: 0;
+html,
+body {
+  margin : 0;
   padding: 0;
 }
+
 * {
   box-sizing: border-box;
 }
 
-
 body {
-  color:white;
-  font-family: 'Lora', sans-serif;
-  }
-
+  color      : @white;
+  font-family: @main-font;
+}
 
 .container {
-    max-width: 1265px;
-    width    : 100%;
-    margin   : 0 auto;
+  .width-100;
+  max-width: 1265px;
+  margin   : 0 auto;
 
-    @media @tablet {
-      width: 100%;
-    }
-  
-    @media @phone {
-      width: 100%;
-    }
+  @media @tablet {
+    .width-100;
+  }
+
+  @media @phone {
+    .width-100;
+  }
 }

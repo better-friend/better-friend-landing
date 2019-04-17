@@ -1,87 +1,128 @@
 .main {
-  background-color: white;
+  background-color: @white;
 }
 
-
 .intro {
-  color      : #305f72;
-  text-align : center;
+  .text-aline-center;
+  color      : @navy;
   padding-top: 40px;
-  
+
   h2 {
-    margin: 0;
+    margin        : 0;
     padding-bottom: 20px;
   }
 }
 
 .main-content {
-  margin-top     : 95px;
-  margin-bottom  : 95px;
-  display        : flex;
-  justify-content: space-around;
-  align-content  : center;
-  flex-wrap      : wrap;
-@media @tablet {
-  margin: 50px 0;
-  display: flex;
-  flex-direction: column;
-}
-@media @phone {
-  margin: 40px 0;
-}
+  .flex-justify-center;
+  margin-top   : 95px;
+  margin-bottom: 95px;
+  // align-content: center;
+  // flex-wrap    : wrap;
+
+  @media @tablet {
+    .flex-column;
+    margin        : 50px 0;
+  }
+
+  @media @phone {
+    margin: 40px 0;
+  }
 }
 
 .teammate {
-  margin          : 20px 25px;
-  padding         : 0 20px 25px;
-  // border          : 1px solid lightgrey;
-  // border-radius   : 15px;
-  background-color: white;
-  position        : relative;
-  height          : 420px;
-  width           : 480px;
-  overflow        : hidden;
+  .text-aline-center;
+  margin             : 20px 25px;
+  padding            : 0 20px 25px;
+  background-color   : @white;
+  position           : relative;
+  height             : 260px;
+  width              : 480px;
+  overflow           : hidden;
   // box-shadow      : 2px 2px 2px lightgrey;
-  width           : 30%;
-  text-align      : center;
-  color           : #305f72;
+  width              : 30%;
+  color              : @navy;
+
+  button {
+    border: none;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
 
   @media @tablet {
-    width: 100%;
+    .width-100;
   }
+
   h2 {
     font-size: 28px;
     padding  : 0;
     margin   : 15px 0 0;
-
+    color    : @navy;
   }
 
   h3 {
-    font-size: 19px;
+    font-size  : 19px;
+    font-family: @sub-font;
   }
 
-  // img {
-
-  // }
-
-  .close {
-    position: absolute;
-    top     : 10px;
-    right   : 10px;
-  }
-
-  .expandButton {
-    position        : absolute;
-    bottom          : 0;
-    left            : 50%;
-    font-size       : 12px;
-    color           : grey;
-    cursor          : pointer;
-    transform       : translate(-50%);
-    background-color: white;
+  img {
+    height: 160px;
+    width : 160px;
   }
 }
 
-.profile-open {
-  height: 400px;
+/* The Modal (background) */
+.teammate-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left : 0;
+  top  : 0;
+  .width-100;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin          : 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border : 1px solid #888;
+  width  : 80%;
+  /* Could be more or less, depending on screen size */
+
+}
+
+/* The Close Button */
+.close {
+  color      : #aaa;
+  float      : right;
+  font-size  : 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color          : black;
+  text-decoration: none;
+  cursor         : pointer;
 }

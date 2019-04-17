@@ -1,27 +1,26 @@
 .carousel {
-    height        : 230px;
-    display       : flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1d1b5;
-   
-
+    .flex-justify-center;
+    align-items     : center;
+    height          : 240px;
+    background-color: @peach;
+    border-top      : @border;
 
     p {
+        .text-aline-center;
         display   : none;
-        color     : #305f72;
-        font-size : 25px;
-        text-align: center;
+        font-size : 26px;
         font-style: italic;
-        // padding-top:3em;
+        color     : @navy;
+
         @media @phone {
-            font-size: 20px;
+            font-size: 18px;
         }
     }
 
     img {
         width : 30px;
         height: 30px;
+
     }
 
 }
