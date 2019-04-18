@@ -1,6 +1,6 @@
 .header {
   .width-100;
-  .text-aline-center;
+  .text-align-center;
   display         : flex;
   justify-content : space-between;
   height          : 70px;
@@ -14,6 +14,7 @@
     .flex-column;
     align-items: center;
     height     : 150px;
+    
   }
 
   h1 {
@@ -28,6 +29,10 @@
     align-items    : center;
     justify-content: flex-end;
     padding-right  : 15px;
+
+    @media @phone {
+      padding-right:0;
+    }
   }
 
   img {
@@ -37,7 +42,7 @@
   }
 
   a {
-    font-size      : 15px;
+    font-size      : 18px;
     padding        : 0 0.8em;
     text-decoration: none;
     color          : @white;
