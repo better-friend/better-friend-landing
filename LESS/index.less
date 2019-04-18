@@ -11,6 +11,7 @@ html,
 body {
   margin : 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 * {
@@ -24,8 +25,12 @@ body {
 
 .container {
   .width-100;
-  max-width: 1265px;
-  margin   : 0 auto;
+  max-width            : @max-width;
+  margin               : 0 auto;
+  background           : url("../Images/blackboard-flatlay-message-1374362.jpg");
+  background-size      : 100% 670px;
+  background-repeat    : no-repeat;
+  background-position-x: center;
 
   @media @tablet {
     .width-100;

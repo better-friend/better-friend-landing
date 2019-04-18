@@ -23,7 +23,7 @@
   color: white;
   border-bottom: dotted 2px white;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .header {
     width: 100%;
     display: flex;
@@ -74,10 +74,19 @@
   margin-top: 20px;
   line-height: 3em;
 }
+@media (max-width: 1080px) {
+  .content .main-content {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 10px;
+  }
+}
 @media (max-width: 800px) {
   .content .main-content {
-    padding-left: 350px;
+    padding-left: 5%;
+    padding-right: 5%;
     margin-top: 30px;
+    font-size: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -461,6 +470,7 @@
   height: 240px;
   background-color: #f0b7a4;
   border-top: dotted 2px white;
+  background-color: rgba(0, 0, 255, 0);
 }
 .carousel p {
   text-align: center;
@@ -468,6 +478,7 @@
   font-size: 26px;
   font-style: italic;
   color: #305f72;
+  width: 600px;
 }
 @media (max-width: 500px) {
   .carousel p {
@@ -482,6 +493,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -494,6 +506,10 @@ body {
   width: 100%;
   max-width: 1265px;
   margin: 0 auto;
+  background: url("../Images/blackboard-flatlay-message-1374362.jpg");
+  background-size: 100% 670px;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 @media (max-width: 800px) {
   .container {
