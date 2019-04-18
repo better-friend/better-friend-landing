@@ -195,6 +195,11 @@
 .bottom-content .features .features1 {
   border-right: dotted 2px white;
 }
+@media (max-width: 1080px) {
+  .bottom-content .features .features1 {
+    border-right: none;
+  }
+}
 @media (max-width: 800px) {
   .bottom-content .features .features1 {
     border-right: none;
@@ -208,6 +213,11 @@
 .bottom-content .features .features2 {
   border-right: dotted 2px white;
 }
+@media (max-width: 1080px) {
+  .bottom-content .features .features2 {
+    border-right: none;
+  }
+}
 @media (max-width: 800px) {
   .bottom-content .features .features2 {
     border-right: none;
@@ -220,6 +230,11 @@
 }
 .bottom-content .features .features4 {
   border-right: dotted 2px white;
+}
+@media (max-width: 1080px) {
+  .bottom-content .features .features4 {
+    border-right: none;
+  }
 }
 @media (max-width: 800px) {
   .bottom-content .features .features4 {
