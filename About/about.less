@@ -75,7 +75,9 @@
     color      : @navy;
     font-family: @main-font;
     text-align : left;
-
+    @media @phone {
+      .text-align-center;
+    }
   }
 
   h3 {
@@ -142,9 +144,9 @@
   margin            : 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
-  border : 1px solid #888;
+  border : 7px solid #888;
   width  : 60%;
-  height : 60%;
+  height : 70%;
 
   @media @tablet {
     width: 70%;
