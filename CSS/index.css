@@ -78,7 +78,7 @@
   margin-top: 20px;
   line-height: 3em;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
   .content .main-content {
     padding-left: 5%;
     padding-right: 5%;
@@ -195,7 +195,7 @@
 .bottom-content .features .features1 {
   border-right: dotted 2px white;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
   .bottom-content .features .features1 {
     border-right: none;
   }
@@ -213,7 +213,7 @@
 .bottom-content .features .features2 {
   border-right: dotted 2px white;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
   .bottom-content .features .features2 {
     border-right: none;
   }
@@ -231,7 +231,7 @@
 .bottom-content .features .features4 {
   border-right: dotted 2px white;
 }
-@media (max-width: 1080px) {
+@media (max-width: 1110px) {
   .bottom-content .features .features4 {
     border-right: none;
   }
