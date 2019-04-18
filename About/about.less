@@ -49,6 +49,10 @@
     width: 300px;
   }
 
+  @media @phone {
+    padding-bottom: 20px;
+  }
+
   button {
     border: none;
   }
@@ -99,7 +103,7 @@
   padding: 20px 0;
 
   @media @phone {
-    padding: 10px 10px;
+    padding: 0 10px 5px 10px;
   }
   p {
     font-style: italic;
@@ -144,6 +148,11 @@
   width  : 60%;
   height : 60%;
 
+  @media @tablet {
+    width: 70%;
+    height:60%;
+    overflow: auto;
+  }
   @media @phone {
     width : 80%;
     height: 70%;
@@ -158,6 +167,9 @@
     font-size     : 20px;
     padding-left  : 50px;
 
+    @media @tablet {
+    padding-left: 30px;;
+    }
     @media @phone {
       text-align  : center;
       align-items : center;
@@ -233,7 +245,7 @@
   .close {
     color      : #aaa;
     float      : right;
-    font-size  : 28px;
+    font-size  : 25px;
     font-weight: bold;
   }
 
