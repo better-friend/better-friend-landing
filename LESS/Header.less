@@ -1,9 +1,9 @@
 .header {
   .width-100;
   .text-align-center;
+  .align-items-center;
   display         : flex;
   justify-content : space-between;
-  align-items: center;
   height          : 70px;
   padding         : 0.5em;
   background-color: @navy;
@@ -13,7 +13,7 @@
   @media @tablet {
     .width-100;
     .flex-column;
-    align-items: center;
+    .align-items-center;
     height     : 120px;
     padding: 1em;
   }
@@ -23,10 +23,10 @@
 
   h1 {
     .text-align-center;
-    margin      : 0;
+    .margin-zero;
+    .align-items-center;
     font-size   : 35px;
     padding-left: 15px;
-    align-items    : center;
 
     @media @phone {
       font-size: 30px;
@@ -34,9 +34,9 @@
   }
 
   nav {
+    .align-items-center;
+    .flex-wrap;
     display        : flex;
-    flex-wrap      : wrap;
-    align-items    : center;
     justify-content: flex-end;
     padding-right  : 15px;
 
@@ -47,9 +47,9 @@
   }
 
   a {
+    .text-decoration-none;
     font-size      : 18px;
     padding        : 0 0.8em;
-    text-decoration: none;
     color          : @white;
 
     &:hover {

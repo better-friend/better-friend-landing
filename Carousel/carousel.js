@@ -31,7 +31,6 @@ class Carousel {
                 self.currentIndex = currentIndex;
             });
     }
-
 }
 
 let carousel = Array.from(document.querySelectorAll('.carousel')).map(carousel => new Carousel(carousel));

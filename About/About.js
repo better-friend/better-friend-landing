@@ -32,13 +32,6 @@ class Teammate {
     this.span.addEventListener('click', () => {
       this.closeModal();
     });
-
-    // window.onclick = function (event) {
-    //   console.log("in window click");
-    //   if (event.target == this.modal) {
-    //     this.modal.style.display = "none";
-    //   }
-    // }
   }
 
   openModal() {
