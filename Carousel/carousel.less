@@ -1,6 +1,6 @@
 .carousel {
     .flex-justify-center;
-    align-items     : center;
+    .align-items-center;
     height          : 240px;
     background-color: @pink;
     border-top      : @border;
@@ -9,10 +9,14 @@
     p {
         .text-align-center;
         display   : none;
+        width     : 600px;
         font-size : 26px;
         font-style: italic;
         color     : @navy;
-        width     : 600px;
+        
+        @media @tablet {
+            font-size: 23px;
+        }
 
         @media @phone {
             font-size: 18px;
