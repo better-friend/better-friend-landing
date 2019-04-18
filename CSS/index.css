@@ -27,6 +27,12 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-start {
+  align-items: flex-start;
+}
+.display-flex {
+  display: flex;
+}
 .header {
   width: 100%;
   text-align: center;
@@ -198,6 +204,7 @@
   text-align: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  padding-bottom: 15px;
 }
 .bottom-content .features .feature {
   display: flex;
@@ -205,12 +212,23 @@
   text-align: center;
   align-items: center;
   flex-direction: column;
-  width: 370px;
+  width: 380px;
   padding: 15px 10px;
+  margin: 15px 0;
 }
 @media (max-width: 500px) {
   .bottom-content .features .feature {
     padding: 10px;
+  }
+}
+.bottom-content .features .feature p {
+  font-size: 16px;
+  color: #fefefe;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 800px) {
+  .bottom-content .features .feature p {
+    margin-top: 5px;
   }
 }
 .bottom-content .features .features1 {
@@ -275,11 +293,12 @@
   font-size: 18px;
   padding-top: 1.3em;
   color: #305f72;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', sans-serif;
+  font-style: initial;
 }
 @media (max-width: 800px) {
   .bottom-content .features h1 {
-    padding-bottom: 2em;
+    padding-bottom: 0;
   }
 }
 .footer {
@@ -408,27 +427,17 @@
   font-style: italic;
   font-family: 'Lora', sans-serif;
 }
-/* The Modal (background) */
 .teammate-modal {
   width: 100%;
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
-/* Modal Content/Box */
 .modal-content {
   align-items: center;
   margin: 15% auto;
@@ -437,7 +446,11 @@
   height: 60%;
   border: 6px solid #888;
   background-color: #fefefe;
-  /* The Close Button */
+}
+@media (max-width: 1110px) {
+  .modal-content {
+    overflow: auto;
+  }
 }
 @media (max-width: 800px) {
   .modal-content {
@@ -459,11 +472,12 @@
   text-align: left;
   align-items: flex-start;
   font-size: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
 }
 @media (max-width: 800px) {
   .modal-content .title {
-    padding-left: 30px;
+    align-items: center;
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 500px) {
