@@ -3,6 +3,7 @@
   .text-align-center;
   display         : flex;
   justify-content : space-between;
+  align-items: center;
   height          : 70px;
   padding         : 0.5em;
   background-color: @navy;
@@ -13,14 +14,19 @@
     .width-100;
     .flex-column;
     align-items: center;
-    height     : 150px;
-    
+    height     : 120px;
+    padding: 1em;
+  }
+  @media @phone {
+    height: 145px;
   }
 
   h1 {
+    .text-align-center;
     margin      : 0;
     font-size   : 35px;
     padding-left: 15px;
+    align-items    : center;
   }
 
   nav {
@@ -33,12 +39,6 @@
     @media @phone {
       padding-right:0;
     }
-  }
-
-  img {
-    height: 20px;
-    width : 20px;
-    color : @white;
   }
 
   a {
