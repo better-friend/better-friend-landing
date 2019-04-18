@@ -71,7 +71,7 @@
             display: block;
 
             .button {
-                text-decoration : none;
+                .text-decoration-none;
                 border          : solid 2px;
                 font-size       : 25px;
                 padding         : 10px 40px;
@@ -110,18 +110,30 @@
         .flex-justify-center;
         .text-align-center;
         .flex-wrap;
-        align-items: flex-start;
+        .flex-start;
+        padding-bottom: 15px;
 
         .feature {
             .flex-justify-center;
             .text-align-center;
             .align-items-center;
             flex-direction: column;
-            width         : 370px;
+            width         : 380px;
             padding       : 15px 10px;
+            margin        : 15px 0;
 
             @media @phone {
                 padding: 10px;
+            }
+
+            p {
+                font-size  : 16px;
+                color      : @offwhite;
+                font-family: @sub-font;
+
+                @media @tablet {
+                    margin-top: 5px;
+                }
             }
         }
 
@@ -182,11 +194,13 @@
             font-size  : 18px;
             padding-top: 1.3em;
             color      : @navy;
-            font-family: @sub-font;
+            font-family: @main-font;
+            font-style : initial;
 
             @media @tablet {
-                padding-bottom: 2em;
+                padding-bottom: 0;
             }
+
 
         }
     }
